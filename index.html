@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Serach Posts</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-toggle').click(function () {
+                $('body').toggleClass('open');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="row1">
+        <header class="wrap">
+            <h1><a href="./index.html">Serach Posts</a></h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="/">menu01(未)</a></li>
+                    <li><a href="/">menu02(未)</a></li>
+                    <li><a href="/">menu03(未)</a></li>
+                </ul>
+            </nav>
+            <div id="nav-toggle" class="sp">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </div><!--.row1-->
+
+    <div class="row2">
+        <div id="root">
+            <main class="wrap">
+                <section class="search">
+                    <form action="#">
+                        <h2>掲示板：動作確認(情報取得-Title検索機能)</h2>
+                        <p>Titleで絞り込みたい文字を入力してください<br>
+                            <input type="text" name="article" value="">
+                        </p>
+                    </form>
+                    <p>データ取得元：<a href="https://jsonplaceholder.typicode.com/posts/">https://jsonplaceholder.typicode.com/posts/</a>
+                    </p>
+                </section>
+
+                <h3>検索結果：xx件 (選択で記事へのコメント確認画面へ)</h3>
+
+                <section class="result">
+                    
+                    <article class="post_data new">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</dd>
+                                <dt>Body</dt>
+                                <dd class="post">quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+
+                    <article class="post_data new">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">qui est esse</dd>
+                                <dt>Body</dt>
+                                <dd class="post">est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+                    
+                    <article class="post_data new">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</dd>
+                                <dt>Body</dt>
+                                <dd class="post">quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+
+                    <article class="post_data new">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">qui est esse</dd>
+                                <dt>Body</dt>
+                                <dd class="post">est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+                    
+                    <article class="post_data">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</dd>
+                                <dt>Body</dt>
+                                <dd class="post">quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+
+                    <article class="post_data">
+                        <a href="./comment.html">
+                            <dl>
+                                <dt>Title</dt>
+                                <dd class="title">qui est esse</dd>
+                                <dt>Body</dt>
+                                <dd class="post">est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla</dd>
+                            </dl>
+                            <p class="ta_right">&gt;&gt;続きを読む</p>
+                        </a>
+                    </article>
+                    
+                </section>
+            </main>
+        </div><!--#root-->
+    </div><!--.row2-->
+
+    <div class="row3">
+        <footer class="wrap">
+            <p>© Serch Posts</p>
+        </footer>
+    </div><!--.row3-->
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Comment : Serach Posts</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-toggle').click(function () {
+                $('body').toggleClass('open');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="row1">
+        <header class="wrap">
+            <h1><a href="./index.html">Serach Posts</a></h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="/">menu01(未)</a></li>
+                    <li><a href="/">menu02(未)</a></li>
+                    <li><a href="/">menu03(未)</a></li>
+                </ul>
+            </nav>
+            <div id="nav-toggle" class="sp">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </div><!--.row1-->
+
+    <div class="row2">
+        <div id="root">
+            <main class="wrap">
+                <section class="conversation">
+                    <p><a href="./index.html">&lt;&lt;一覧に戻る</a></p>
+                    <h2><span class="conversation_title">Title：</span>
+                        sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h2>
+                    <p>(選択した掲示板記事の詳細表示)</p>
+                    <p class="post_body">quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</p>
+                    <p>データ取得元：<a href="https://jsonplaceholder.typicode.com/comments/">https://jsonplaceholder.typicode.com/comments/</a></p>
+                    <hr>
+                </section>
+
+                <section class="comment">
+                    <p>コメント一覧：(掲示板記事へのコメント取得、表示一対多)</p>
+
+                    <article class="comment_data">
+                        <div class="comment_person">
+                            <p class="person dropcap">Eliseo@gardner.biz</p>
+                        </div>
+                        <div class="comment_body">
+                            <p>id labore ex et quam laborum</p>
+                            <p>laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium</p>
+                        </div>
+                    </article>
+
+                    <article class="comment_data">
+                        <div class="comment_person">
+                            <p class="person dropcap">Jayne_Kuhic@sydney.com</p>
+                        </div>
+                        <div class="comment_body">
+                            <p>quo vero reiciendis velit similique earum</p>
+                            <p>est natus enim nihil est dolore omnis voluptatem numquam et omnis occaecati quod ullam at voluptatem error expedita pariatur nihil sint nostrum voluptatem reiciendis et</p>
+                        </div>
+                    </article>
+
+                    <article class="comment_data">
+                        <div class="comment_person">
+                            <p class="person dropcap">Nikita@garfield.biz</p>
+                        </div>
+                        <div class="comment_body">
+                            <p>odio adipisci rerum aut animi</p>
+                            <p>quia molestiae reprehenderit quasi aspernatur aut expedita occaecati aliquam eveniet laudantium omnis quibusdam delectus saepe quia accusamus maiores nam est cum et ducimus et vero voluptates excepturi deleniti ratione</p>
+                        </div>
+                    </article>
+
+                    <article class="comment_data">
+                        <div class="comment_person">
+                            <p class="person dropcap">Lew@alysha.tv</p>
+                        </div>
+                        <div class="comment_body">
+                            <p>alias odio sit</p>
+                            <p>non et atque occaecati deserunt quas accusantium unde odit nobis qui voluptatem quia voluptas consequuntur itaque dolor et qui rerum deleniti ut occaecati</p>
+                        </div>
+                    </article>
+
+                    <article class="comment_data">
+                        <div class="comment_person">
+                            <p class="person dropcap">Hayden@althea.biz</p>
+                        </div>
+                        <div class="comment_body">
+                            <p>vero eaque aliquid doloribus et culpa</p>
+                            <p>harum non quasi et ratione tempore iure ex voluptates in ratione harum architecto fugit inventore cupiditate voluptates magni quo et</p>
+                        </div>
+                    </article>
+
+                </section>
+            </main>
+        </div><!--#root-->
+    </div><!--.row2-->
+
+    <div class="row3">
+        <footer class="wrap">
+            <p>© Serch Posts</p>
+        </footer>
+    </div><!--.row3-->
+
+</body>
+
+</html>
